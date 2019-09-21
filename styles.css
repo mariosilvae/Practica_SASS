@@ -1,0 +1,96 @@
+@charset "UTF-8";
+body {
+  background-color: #0d730d;
+  margin: 0;
+  padding: 0; }
+
+/*Clase center*/
+.center, .header, .search__title {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+/*clase tamaño del contenedor*/
+.size-container, .header, .search__title, .search__input input {
+  width: 100%;
+  height: 80px; }
+
+/*clase transformacion de letra*/
+.letter-transform, .header, .search__title {
+  text-transform: uppercase;
+  letter-spacing: 5px; }
+
+.description, .ps__description--primary, .ps__description--secondary {
+  background-color: #0d730d;
+  color: #FFF; }
+
+/*Estilización del header con SASS*/
+.header {
+  background-color: #0d730d;
+  color: #FFF;
+  font-font-family: arial;
+  font-font-size: 18px;
+  font-font-weight: bold; }
+
+/*Estilizacion de main*/
+.main img {
+  width: 100%;
+  height: 100%; }
+
+/*Estilización del buscador*/
+.search__title {
+  background-color: #0d730d;
+  color: #FFF;
+  font-family: arial;
+  font-size: 18px; }
+.search__input {
+  background-color: #FFF;
+  display: grid;
+  grid-template-columns: 60px auto;
+  justify-items: center;
+  align-items: center; }
+  .search__input input {
+    border: 0px;
+    outline: none;
+    font-size: 18px;
+    letter-spacing: 5px; }
+
+/*Estilización primary section*/
+.ps {
+  width: 100%;
+  height: 900px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 2fr 1fr 1fr 2fr; }
+  @media screen and (max-width: 800px) {
+    .ps {
+      height: 500px; } }
+  .ps img {
+    width: 100%;
+    height: 100%; }
+  .ps__img--primary {
+    grid-row: 1/4; }
+    @media screen and (max-width: 800px) {
+      .ps__img--primary {
+        grid-row: 1/3; } }
+  .ps__description--primary {
+    grid-column: 2;
+    grid-row: 1/2; }
+    @media screen and (max-width: 800px) {
+      .ps__description--primary {
+        grid-column: 2;
+        grid-row: 1/3; } }
+  .ps__img--secondary {
+    grid-column: 2;
+    grid-row: 2/5; }
+    @media screen and (max-width: 800px) {
+      .ps__img--secondary {
+        grid-column: 2;
+        grid-row: 3/5; } }
+  .ps__description--secondary {
+    grid-row: 4/5; }
+    @media screen and (max-width: 800px) {
+      .ps__description--secondary {
+        grid-row: 3/5; } }
+
+/*# sourceMappingURL=styles.css.map */
